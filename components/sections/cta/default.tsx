@@ -22,7 +22,7 @@ interface CTAProps {
 }
 
 export default function CTA({
-  title = "Start building",
+  title = "Ready to bring space down to earth?",
   buttons = [
     {
       href: siteConfig.getStartedUrl,

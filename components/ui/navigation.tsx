@@ -48,76 +48,64 @@ interface NavigationProps {
 export default function Navigation({
   menuItems = [
     {
-      title: "Getting started",
+      title: "Solutions",
       content: "default",
     },
     {
-      title: "Components",
+      title: "Technology",
       content: "components",
     },
     {
-      title: "Documentation",
+      title: "About",
       isLink: true,
-      href: siteConfig.url,
+      href: "/about",
     },
   ],
   components = [
     {
-      title: "Alert Dialog",
-      href: "/docs/primitives/alert-dialog",
+      title: "Satellite Integration",
+      href: "/technology/satellites",
       description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
+        "Learn how we integrate data from 20+ satellites for comprehensive Earth observation.",
     },
     {
-      title: "Hover Card",
-      href: "/docs/primitives/hover-card",
+      title: "AI Models",
+      href: "/technology/ai",
       description:
-        "For sighted users to preview content available behind a link.",
+        "Discover our AI models trained on multi-hyperspectral imaging data.",
     },
     {
-      title: "Progress",
-      href: "/docs/primitives/progress",
+      title: "Data Processing",
+      href: "/technology/processing",
       description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        "Understand how we process 800+ data parameters for accurate insights.",
     },
     {
-      title: "Scroll-area",
-      href: "/docs/primitives/scroll-area",
-      description: "Visually or semantically separates content.",
-    },
-    {
-      title: "Tabs",
-      href: "/docs/primitives/tabs",
-      description:
-        "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-      title: "Tooltip",
-      href: "/docs/primitives/tooltip",
-      description:
-        "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      title: "Accuracy Metrics",
+      href: "/technology/accuracy",
+      description: "Learn about our 97% accuracy in environmental monitoring.",
     },
   ],
   logo = <LaunchUI />,
-  logoTitle = "Launch UI",
-  logoDescription = "Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project.",
+  logoTitle = "RIFFAI",
+  logoDescription = "AI-powered satellite solutions for monitoring environmental change with 97% accuracy.",
   logoHref = siteConfig.url,
   introItems = [
     {
-      title: "Introduction",
-      href: siteConfig.url,
+      title: "Flood Management",
+      href: "/solutions/flood-management",
       description:
-        "Re-usable components built using Radix UI and Tailwind CSS.",
+        "Track upstream water levels for coastal change and adaptation planning.",
     },
     {
-      title: "Installation",
-      href: siteConfig.url,
-      description: "How to install dependencies and structure your app.",
+      title: "Dumpsite Detection",
+      href: "/solutions/dumpsite-detection",
+      description: "AI land classification for policy enforcement against illegal dumping.",
     },
     {
-      title: "Typography",
-      href: siteConfig.url,
-      description: "Styles for headings, paragraphs, lists...etc",
+      title: "Renewable Energy",
+      href: "/solutions/renewable-energy",
+      description: "Automate site selection for wind and solar installations.",
     },
   ],
 }: NavigationProps) {

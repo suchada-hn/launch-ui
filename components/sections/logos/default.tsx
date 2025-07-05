@@ -19,35 +19,15 @@ interface LogosProps {
 }
 
 export default function Logos({
-  title = "Built with industry-standard tools and best practices",
-  badge = (
-    <Badge variant="outline" className="border-brand/30 text-brand">
-      Last updated: {siteConfig.stats.updated}
-    </Badge>
-  ),
+  title = "Events & Press",
+  badge = false,
   logos = [
-    <Logo key="figma" image={Figma} name="Figma" />,
-    <Logo key="react" image={React} name="React" version="19.0.0" />,
-    <Logo
-      key="typescript"
-      image={TypeScript}
-      name="TypeScript"
-      version="5.6.3"
-    />,
-    <Logo
-      key="shadcn"
-      image={ShadcnUi}
-      name="Shadcn/ui"
-      version="2.4.0"
-      badge="New"
-    />,
-    <Logo
-      key="tailwind"
-      image={Tailwind}
-      name="Tailwind"
-      version="4.0"
-      badge="New"
-    />,
+    <Logo key="money2020" image={Figma} name="Money 20/20" />,
+    <Logo key="ces" image={React} name="CES" />,
+    <Logo key="cop29" image={TypeScript} name="COP29" />,
+    <Logo key="gcsp" image={ShadcnUi} name="GCSP" />,
+    <Logo key="ted" image={Tailwind} name="TED" />,
+    <Logo key="techplanter" image={Figma} name="Tech Planter" />,
   ],
   className,
 }: LogosProps) {

@@ -30,13 +30,13 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Give your big idea the design it deserves",
-  description = "Professionally designed blocks and templates built with React, Shadcn/ui and Tailwind that will help your product stand out.",
+  title = "BRING SPACE DOWN TO EARTH",
+  description = "AI-powered satellite solutions for monitoring environmental change with 97% accuracy.",
   mockup = (
     <Screenshot
       srcLight="/app-light.png"
       srcDark="/app-dark.png"
-      alt="Launch UI app screenshot"
+      alt="RIFFAI satellite monitoring dashboard"
       width={1248}
       height={765}
       className="w-full"
@@ -45,10 +45,10 @@ export default function Hero({
   badge = (
     <Badge variant="outline" className="animate-appear">
       <span className="text-muted-foreground">
-        New version of Launch UI is out!
+        Monitoring environmental change from space
       </span>
       <a href={siteConfig.getStartedUrl} className="flex items-center gap-1">
-        Get started
+        Learn more
         <ArrowRightIcon className="size-3" />
       </a>
     </Badge>
@@ -61,9 +61,8 @@ export default function Hero({
     },
     {
       href: siteConfig.links.github,
-      text: "Github",
+      text: "Learn More",
       variant: "glow",
-      icon: <Github className="mr-2 size-4" />,
     },
   ],
   className,

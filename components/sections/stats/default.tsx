@@ -17,26 +17,16 @@ interface StatsProps {
 export default function Stats({
   items = [
     {
-      label: "used by",
-      value: Math.round(siteConfig.stats.figma / 100) / 10,
-      suffix: "k",
-      description: "designers on Figma Community",
+      value: "$2T",
+      description: "Annual productivity losses related to climate-change",
     },
     {
-      label: "over",
-      value: siteConfig.stats.github,
-      description: "clones and forks of the template on Github",
+      value: "83%",
+      description: "Increase in Climate-Related Disaster Events",
     },
     {
-      label: "already",
-      value: Math.round(siteConfig.stats.cli / 100) / 10,
-      suffix: "k",
-      description: "installations with shadcn/ui CLI",
-    },
-    {
-      label: "includes",
-      value: siteConfig.stats.sections,
-      description: "blocks and sections",
+      value: "$25T",
+      description: "Net supply chain losses from climate disruptions",
     },
   ],
   className,
@@ -45,11 +35,11 @@ export default function Stats({
     <Section className={className}>
       <div className="container mx-auto max-w-[960px]">
         {items !== false && items.length > 0 && (
-          <div className="grid grid-cols-2 gap-12 sm:grid-cols-4">
+          <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start gap-3 text-left"
+                className="flex flex-col items-center gap-3 text-center"
               >
                 {item.label && (
                   <div className="text-muted-foreground text-sm font-semibold">

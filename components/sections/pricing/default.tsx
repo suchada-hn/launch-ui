@@ -1,4 +1,4 @@
-import { User, Users } from "lucide-react";
+import { Waves, AlertTriangle, Zap } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -14,60 +14,61 @@ interface PricingProps {
 }
 
 export default function Pricing({
-  title = "Build your dream landing page, today.",
-  description = "Get lifetime access to all the components. No recurring fees. Just simple, transparent pricing.",
+  title = "Industry-Agnostic Solutions",
+  description = false,
   plans = [
     {
-      name: "Free",
-      description: "For everyone starting out on a website for their big idea",
+      name: "Flood & Water Management",
+      icon: <Waves className="size-4" />,
+      description: "Tracking upstream water levels for coastal change and adaptation planning.",
       price: 0,
-      priceNote: "Free and open-source forever.",
+      priceNote: "Contact us for custom pricing and implementation.",
       cta: {
         variant: "glow",
-        label: "Get started for free",
-        href: "/docs/getting-started/introduction",
+        label: "Learn More",
+        href: "/solutions/flood-management",
       },
       features: [
-        "1 website template",
-        "9 blocks and sections",
-        "4 custom animations",
+        "Real-time water level monitoring",
+        "Coastal change prediction",
+        "Adaptation planning insights",
       ],
       variant: "default",
-      className: "hidden lg:flex",
+      className: "",
     },
     {
-      name: "Pro",
-      icon: <User className="size-4" />,
-      description: "For early-stage founders, solopreneurs and indie devs",
-      price: 99,
-      priceNote: "Lifetime access. Free updates. No recurring fees.",
+      name: "Illegal Dumpsite Detection",
+      icon: <AlertTriangle className="size-4" />,
+      description: "Using AI land classification for legal and policy enforcement against open dumping sites.",
+      price: 0,
+      priceNote: "Contact us for custom pricing and implementation.",
       cta: {
         variant: "default",
-        label: "Get all-access",
-        href: siteConfig.pricing.pro,
+        label: "Learn More",
+        href: "/solutions/dumpsite-detection",
       },
       features: [
-        `${siteConfig.stats.websiteTemplates} website templates`,
-        `${siteConfig.stats.appTemplates} app templates`,
-        `${siteConfig.stats.sections} blocks and sections`,
-        `${siteConfig.stats.illustrations} illustrations`,
-        `${siteConfig.stats.animations} custom animations`,
+        "AI-powered land classification",
+        "Automated violation detection",
+        "Policy enforcement support",
       ],
       variant: "glow-brand",
     },
     {
-      name: "Pro Team",
-      icon: <Users className="size-4" />,
-      description: "For teams and agencies working on cool products together",
-      price: 499,
-      priceNote: "Lifetime access. Free updates. No recurring fees.",
+      name: "Renewable Energy Site Selection",
+      icon: <Zap className="size-4" />,
+      description: "Automating the search for buildable areas for wind and solar installations to accelerate lead and sales cycles.",
+      price: 0,
+      priceNote: "Contact us for custom pricing and implementation.",
       cta: {
         variant: "default",
-        label: "Get all-access for your team",
-        href: siteConfig.pricing.team,
+        label: "Learn More",
+        href: "/solutions/renewable-energy",
       },
       features: [
-        "All the templates, components and sections available for your entire team",
+        "Automated site identification",
+        "Buildability assessment",
+        "Accelerated sales cycles",
       ],
       variant: "glow",
     },

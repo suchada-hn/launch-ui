@@ -34,36 +34,39 @@ interface FooterProps {
 
 export default function FooterSection({
   logo = <LaunchUI />,
-  name = "Launch UI",
+  name = "RIFFAI",
   columns = [
     {
-      title: "Product",
+      title: "Solutions",
       links: [
-        { text: "Changelog", href: siteConfig.url },
-        { text: "Documentation", href: siteConfig.url },
+        { text: "Flood Management", href: "/solutions/flood-management" },
+        { text: "Dumpsite Detection", href: "/solutions/dumpsite-detection" },
+        { text: "Renewable Energy", href: "/solutions/renewable-energy" },
       ],
     },
     {
       title: "Company",
       links: [
-        { text: "About", href: siteConfig.url },
-        { text: "Careers", href: siteConfig.url },
-        { text: "Blog", href: siteConfig.url },
+        { text: "About", href: "/about" },
+        { text: "Team", href: "/team" },
+        { text: "Careers", href: "/careers" },
+        { text: "Press", href: "/press" },
       ],
     },
     {
-      title: "Contact",
+      title: "Resources",
       links: [
-        { text: "Discord", href: siteConfig.url },
-        { text: "Twitter", href: siteConfig.url },
-        { text: "Github", href: siteConfig.links.github },
+        { text: "Documentation", href: "/docs" },
+        { text: "API Reference", href: "/api" },
+        { text: "Support", href: "/support" },
+        { text: "Contact", href: "/contact" },
       ],
     },
   ],
-  copyright = "© 2025 Mikołaj Dobrucki. All rights reserved",
+  copyright = "© 2025 RIFFAI. All rights reserved",
   policies = [
-    { text: "Privacy Policy", href: siteConfig.url },
-    { text: "Terms of Service", href: siteConfig.url },
+    { text: "Privacy Policy", href: "/privacy" },
+    { text: "Terms of Service", href: "/terms" },
   ],
   showModeToggle = true,
   className,

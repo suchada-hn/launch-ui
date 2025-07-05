@@ -41,18 +41,18 @@ interface NavbarProps {
 
 export default function Navbar({
   logo = <LaunchUI />,
-  name = "Launch UI",
+  name = "RIFFAI",
   homeUrl = siteConfig.url,
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    { text: "Solutions", href: "/solutions" },
+    { text: "About", href: "/about" },
+    { text: "Contact", href: "/contact" },
   ],
   actions = [
-    { text: "Sign in", href: siteConfig.url, isButton: false },
+    { text: "Sign in", href: "/signin", isButton: false },
     {
       text: "Get Started",
-      href: siteConfig.url,
+      href: siteConfig.getStartedUrl,
       isButton: true,
       variant: "default",
     },
